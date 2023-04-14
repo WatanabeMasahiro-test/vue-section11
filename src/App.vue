@@ -1,26 +1,37 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="container">
+    <div class="row">
+      <h2>カスタムディレクティブ</h2>
+      <samp>HELLO!!!!!!!!</samp>
+      <hr class="py-1">
+      <LinkComponent1></LinkComponent1>
+      <GlobalComp></GlobalComp>
+      <hr class="py-1">
+    </div>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import LinkComponent1 from './components/LinkComponent1.vue'
+import './assets/css/style.css'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
+    LinkComponent1,
+  },
+  data: () => ({
+
+  }),
+  computed: {
+
+  },
+  methods: {
+
+  },
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
